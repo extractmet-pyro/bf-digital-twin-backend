@@ -1,0 +1,22 @@
+# Render Blueprint - BF-TWIN backend (FastAPI web service)
+# Render dashboard -> New -> Blueprint -> select this repository.
+services:
+  - type: web
+    name: bf-twin-api
+    runtime: python
+    plan: free                      # use "starter" or higher for production (no sleep, more RAM/CPU)
+    region: singapore
+    branch: main
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --workers 1 --timeout-keep-alive 75
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.1"
+      - key: ALLOWED_ORIGINS
+        value: "*"                  # set to https://bf-twin.onrender.com (your frontend URL) in production
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: OPENBLAS_NUM_THREADS
+        value: "1"

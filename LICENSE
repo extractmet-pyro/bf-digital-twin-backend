@@ -1,0 +1,10 @@
+BF-TWIN - Blast Furnace Digital Twin, Process Simulator and Supervisory Control
+Copyright (c) 2026 Extractmet Private Limited. All rights reserved.
+
+This software and its documentation are proprietary to Extractmet Private Limited and are
+provided to the licensee under the terms of a separate commercial licence agreement.
+No part of this software may be copied, modified, distributed, sub-licensed or used to build
+a competing product without the prior written permission of Extractmet Private Limited.
+
+Third-party components: NumPy and SciPy (BSD-3-Clause), FastAPI (MIT), Uvicorn (BSD-3-Clause),
+Pydantic (MIT). Their licences apply to those components.

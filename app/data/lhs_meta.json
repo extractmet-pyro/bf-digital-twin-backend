@@ -1,0 +1,114 @@
+{
+ "x_names": [
+  "blast_volume",
+  "blast_temp",
+  "o2_enrich",
+  "pci",
+  "moisture",
+  "pellet_frac",
+  "coke_rate"
+ ],
+ "y_bal": [
+  "ore_kg",
+  "limestone_kg",
+  "dolomite_kg",
+  "quartzite_kg",
+  "blast_nm3",
+  "tg_CO",
+  "tg_CO2",
+  "tg_H2",
+  "tg_H2O",
+  "tg_N2",
+  "dust_C",
+  "dust_Fe",
+  "dust_O",
+  "dust_H",
+  "hm_Fe",
+  "hm_C",
+  "hm_Si",
+  "hm_Mn",
+  "hm_P",
+  "hm_S",
+  "sl_SiO2",
+  "sl_Al2O3",
+  "sl_CaO",
+  "sl_MgO",
+  "sl_MnO",
+  "sl_FeO",
+  "sl_TiO2",
+  "sl_P2O5",
+  "sl_CaS",
+  "tg_sens",
+  "hm_sens",
+  "sl_sens",
+  "loss_MJ"
+ ],
+ "y_kpi": [
+  "hmt",
+  "ttop",
+  "raft",
+  "dP",
+  "prod_tpd",
+  "eta_co",
+  "si_pct",
+  "s_pct",
+  "c_pct",
+  "slag_rate",
+  "slag_B2",
+  "slag_Al2O3",
+  "slag_MgO",
+  "co2",
+  "cost",
+  "heat_loss_MW",
+  "sol_loss",
+  "burnout",
+  "cz_top",
+  "cz_bot",
+  "tg_lhv",
+  "o2_nm3",
+  "tg_nm3",
+  "fuel_rate",
+  "trz_T"
+ ],
+ "n_closure": 20,
+ "n_fixed": 900,
+ "coke_est_coef": [
+  773.6388219245227,
+  -0.0019399174074789993,
+  -0.2051302269321044,
+  2.7674818398223637,
+  -0.9752358778217088,
+  0.24307147818595717,
+  -0.4159004987472813
+ ],
+ "bounds": {
+  "blast_volume": [
+   4219.5,
+   5432.000000000001
+  ],
+  "blast_temp": [
+   1050.0,
+   1250.0
+  ],
+  "o2_enrich": [
+   1.0,
+   8.0
+  ],
+  "pci": [
+   100.0,
+   230.0
+  ],
+  "moisture": [
+   5.0,
+   35.0
+  ],
+  "pellet_frac": [
+   0.0,
+   55.0
+  ]
+ },
+ "fp_cpu_mean_s": 2.74369922902849,
+ "fp_closure_cpu_mean_s": 10.311152243614197,
+ "generated_s": 1358.3082852363586,
+ "seed": 7
+}
